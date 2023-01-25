@@ -184,7 +184,7 @@ class DepartmentServiceTest {
 
 
         // When
-        Map<String, Long> result = departmentService.getNumberOfDepartmentsPerLanguage();
+        Map<String, Long> actual = departmentService.getNumberOfDepartmentsPerLanguage();
 
         // Then
         Map<String, Long> expected = Map.of(
@@ -194,6 +194,6 @@ class DepartmentServiceTest {
                 "RUST", 0L
         );
 
-        assertEquals(expected, result);
+        assertEquals(expected, actual);
     }
 }
